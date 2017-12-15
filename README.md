@@ -2,7 +2,7 @@
 基于vue2.x+element-ui的模仿浏览器标签页的后台管理模板
 A Vue-admin-template imitate browser Label Page for Vue2.x &amp; element-ui
 
-预览地址：[demo](https://826327700.github.io/demo/vue-tabs-admin/?_blank)
+预览地址：<a href="https://826327700.github.io/demo/vue-tabs-admin/" target="_blank">demo</a>
 
 ### 使用
 ```
