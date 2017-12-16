@@ -38,7 +38,6 @@ router.beforeEach((to, from, next) => {
         }
     });
     store.dispatch('pushCachePage',includeArr)
-    console.log(to)
     //添加页面tags
     if(to.matched.length>1){
         let tag={
@@ -50,7 +49,14 @@ router.beforeEach((to, from, next) => {
         }
         store.dispatch('pushPageTags',tag)
     }else if(to.matched.length==1){
-    
+        let tag={
+            name:to.name,
+            isActive:true,
+            closable:true,
+            component:to.meta.name,
+            url:to.fullPath,
+        }
+        store.dispatch('pushPageTags',tag)
     }
     next()
     //重复打开页面以刷新页面
